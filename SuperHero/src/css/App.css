@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.welcomePic {
+  height: 100px;
+  max-width: 315px;
+  min-width: 315px;
+  margin-left: 5px;
+  background-image: url("../pictures/superWelcome.gif");
+  background-size: 100% 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.scoreBoard {
+  background-image: url("../pictures/allHeroes.png");
+  background-color: #603bbb;
+  height: 100%;
+}
+
+.scoreList {
+  border: 2px solid white;
+  background-color: rgba(136, 135, 135, 0.774);
+  width: 60%;
+  height: 350px;
+  overflow-y: scroll;
+  text-align: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scores {
+  text-align: center;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.19);
+  margin-bottom: 2%;
+}
+
+.ScoreBoard > img {
+  width: 100%;
+  top: -50px;
+  position: relative;
+  z-index: -5;
+}
+
+.todo h2 {
+  margin-bottom: 2%;
+}
+
+button:hover:enabled {
+  background-color: #fff;
+  color: #603bbb;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+}
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  display: flex;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+.login .loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+}
+
+.knowHero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: italic 16px Tahoma, Helvetica, Arial, Sans-Serif;
+  color: rgb(171, 143, 202);
+  text-shadow: 0px 0.2px 0.3px rgb(85, 85, 85);
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.hero nav {
+  background: #603bbb;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav img {
+  color: #fff;
+  max-width: 400px;
+  min-width: 300px;
+  height: 100px;
+  margin-left: 10px;
+  border: solid 1px rgb(48, 1, 63);
+}
+
+.hero nav button {
+  height: 50px;
+  width: 90px;
+  padding: 8px 0;
+  background: #3a2b58;
+  border-radius: 3px;
+  margin-right: 5%;
+}
+
+.character-container {
+  background-color: #22254b;
+  text-align: center;
+  border: 2px solid white;
+  height: 500px;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character {
+  margin-left: 2.5%;
+}
+
+.character-btn {
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  max-width: 250px;
+  min-width: 230px;
+}
+
+.character img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.character-info {
+  position: absolute;
+  background-color: #fff;
+  color: #22254b;
+  padding: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transfrom 0.3s ease-in-out;
+}
+
+.character:hover .character-info {
+  transform: translateY(0%);
+  background-color: #fff;
+  color: #22254b;
+  cursor: pointer;
+}
+
+header {
+  background-color: #373b69;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font: bold 28px Tahoma, Helvetica, Arial, Sans-Serif;
+  color: rgb(1, 0, 2);
+  text-shadow: 0px 0.2px 0.3px rgb(85, 85, 85);
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  font-family: inherit;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1, 5rem;
+  margin-top: 8px;
+}
+
+.search:focus {
+  outline: git snone;
+}
+
+.quiz-button {
+  background-color: #fff;
+  color: #22254b;
+}
+
+.container {
+  height: 40px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.headerBut {
+  position: relative;
+  bottom: 35px;
+  white-space: nowrap;
+  border-radius: 5px;
+  font: 14px Tahoma, Helvetica, Arial, Sans-Serif;
+  text-align: center;
+  color: #222;
+  text-shadow: 0px 0.2px 0.3px #555;
+  width: 100px;
+}
+
+header .inner-content {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding-top: 28px;
+}
+
+.divider {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header .nav-links li {
+  display: inline-block;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.noFoundMatch {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .loading > img {
+    height: none;
+    width: 100%;
+  }
+
+  .container {
+    height: 25px;
+  }
+
+  .headerBut {
+    position: relative;
+    bottom: 35px;
+    height: 35px;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 1px;
+    width: 80px;
+  }
+
+  header .inner-content {
+    padding: 1px;
+    padding-top: 27px;
+  }
+
+  .divider {
+    width: 30px;
+    height: auto;
+    display: inline-block;
+  }
+
+  .character-btn {
+    max-width: 175px;
+    min-width: 150px;
+    height: 230px;
+  }
+
+  .character img {
+    height: 230px;
+  }
+
+  .character-container {
+    height: 700px;
+  }
+
+  .hero {
+    height: 80px;
+  }
+
+  .hero nav img {
+    max-width: 300px;
+    min-width: 200px;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+  .hero nav button {
+    margin-right: 3%;
+    width: 70px;
+    height: 40px;
+    padding: 6px 0;
+  }
+
+  .knowHero {
+    font-size: 14px;
+    position: center;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-bottom: 5px;
+  }
+}

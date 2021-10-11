@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.4/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.4/umd/react-dom.development.js"></script>
+    <script>
+        const h = React.createElement;
+    </script>
+
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script>
+    
+    <script src="js/apiConfig.js"></script>
+    <script src="js/dishSource.js"></script>
+    <script src="js/DinnerModel.js"></script>
+  
+    <script src="reactjs/sidebar.js"></script>
+    
+    <script src="reactjs/useModelProp.js"></script>
+    <script src="reactjs/summary.js"></script> 
+    <script src="reactjs/search.js"></script>
+    <script src="reactjs/usePromise.js"></script>
+    <script src="reactjs/details.js"></script>
+    <script src="reactjs/show.js"></script>
+    
+     <script src="reactjs/searchForm.js" type="text/jsx" data-presets="es2016,react"></script>
+    
+    <script src="js/views/sidebarView.js" type="text/jsx" data-presets="es2016, react"></script>
+    <script src="js/views/summaryView.js" type="text/jsx" data-presets="es2016,react"></script>
+    <script src="js/views/promiseNoData.js" type="text/jsx"data-presets="es2016,react"></script>
+    <script src="js/views/searchView.js" type="text/jsx" data-presets="es2016,react"></script>
+    <script src="js/views/detailsView.js" type="text/jsx" data-presets="es2016,react"></script>
+    
+    <script src="js/readModel.js" ></script>
+    <script src="js/app.js" type="text/jsx" ></script>
+    <script type="text/jsx" data-presets="es2016, react">
+        const model = readModel();
+        ReactDOM.render(<App model = {model} />, document.getElementById("app"));
+    </script>
+</html>
+
+
